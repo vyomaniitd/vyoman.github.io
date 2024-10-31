@@ -250,6 +250,7 @@ span {
 #hero img {
   max-width: 95%;
   margin-bottom: 30px;
+  z-index: -1;
 }
 
 #hero .btn-get-started {
@@ -544,33 +545,33 @@ body.mobile-nav-active #mobile-nav-toggle i {
   }
 }
 
-.section-title {
+section .section-title {
   margin-bottom: 80px;
 }
 
 @media (max-width: 992px) {
-  .section-title {
+  section .section-title {
     margin-bottom: 40px;
   }
 }
 
-.section-title h2 {
+section .section-title h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 45px;
-  font-weight: 100;
+  font-size: 36px;
+  font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 20px;
   text-transform: capitalize;
 }
 
-.section-title .separator {
+section .section-title .separator {
   margin: 0;
 }
 
-.separator {
+section .section-title .separator {
   color: #626262;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 33px;
   font-weight: 300;
   margin-bottom: 30px;
   text-transform: capitalize;
@@ -632,15 +633,25 @@ body.mobile-nav-active #mobile-nav-toggle i {
   padding-top: 60px;
 }
 
-#about-us .about-content h2 {
+/* #about-us .about-content h2 {
   color: #252525;
   font-family: "roboto";
   font-size: 39px;
-  font-weight: 100;
+  font-weight:bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+#about-us .about-content .separator {
+  color: #252525;
+  font-family: "roboto";
+  font-size: 33px;
+  font-weight:300;
   letter-spacing: 2px;
   margin-bottom: 20px;
   text-transform: capitalize;
-}
+} */
+
 
 #about-us .about-content span {
   font-weight: 700;
@@ -664,6 +675,18 @@ body.mobile-nav-active #mobile-nav-toggle i {
   width: 100%;
 }
 
+#features .section-title h2 {
+  color: #252525;
+  font-family: "roboto";
+  font-size: 39px;
+  font-weight:bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+
+
 #features .feature-block {
   background: #fff none repeat scroll 0 0;
   padding: 30px 20px;
@@ -680,6 +703,9 @@ body.mobile-nav-active #mobile-nav-toggle i {
   margin-bottom: 20px;
 }
 
+#features .feature-block h6 {
+  margin-bottom: 15px;
+}
 #features .feature-block p {
   margin-bottom: 0;
 }
